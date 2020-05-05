@@ -2,7 +2,7 @@ from nltk.corpus import wordnet
 import argparse
 import json
 
-parser = argparse.ArgumentParser(description='get information from dbpedia and wordnet')
+parser = argparse.ArgumentParser(description='get information from dbpedia and wordnet. Usage: python extracter.py [word]')
 parser.add_argument('--word', default='bottle', help='input word ')
 args = parser.parse_args()
 word = str.lower(args.word)
